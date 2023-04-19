@@ -13,10 +13,11 @@ const Home = () => {
             search +
             "&key=AIzaSyCg-uzWMws07dI7Hs-XvBMJ7VDWo0XOp3M"+
             '&maxresults=40'
+            
         )
         .then((res) => {
           setBookData(res.data.items)
-          console.log(res.data)
+          console.log("Results "+res.data)
         })
         .catch((err) => console.error(err));
     }
