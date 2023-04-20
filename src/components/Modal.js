@@ -19,10 +19,9 @@ const Modal = ({ show, items,onClose}) => {
             <div className="info">
               <h1>{items.volumeInfo.title}</h1>
               <h3> {items.volumeInfo.authors}</h3>
-              <h4>
-                {" "}
-                {items.volumeInfo.publisher}{" "}
-                <span>items.volumeInfo.publishedDate</span>
+              <h4 >
+                {items.volumeInfo.publisher} <br /> 
+                <span>{items.volumeInfo.publishedDate}</span>
               </h4>
               <a href={items.volumeInfo.previewLink}>
                 <button>More</button>
