@@ -49,6 +49,7 @@ html{
     margin-bottom: 15px;
     font-weight: bold;
     color: #D2B48C;
+    text-align: center;
 }
 .row2 img{
     margin-top: 30px;
@@ -147,7 +148,7 @@ html{
     justify-content: center;
 }
 .overlay-inner{
-    background: white;
+    background: #785239;
     width: 700px;
     height: 550px;
     padding: 1.5rem;
@@ -172,28 +173,31 @@ html{
 }
 .overlay-inner .inner-box img{
     margin-right: 20px;
+    border-radius: 10px;
     width: 150px;
     height: 200px;
 }
 .overlay-inner .inner-box h3{
     margin-top: 10px;
-    color: green;
+    color:#BFA27F;
 }
 .overlay-inner .inner-box h4{
-    color: blue;
+    color: #7B8C8D;
 }
 .overlay-inner .inner-box button{
     outline: none;
     border: none;
     width: 100px;
     border-radius: 5px;
-    background-color: #24a0ed;
+    background-color: #BFA27F;
     color: white;
     font-weight: bold;
     padding: 0.3rem 0.5rem;
 }
 .overlay-inner .description{
+    font-weight: normal;
     margin-top: 2rem;
     text-align: justify;
-    font-size: 13px;
+    color: #508991;
+    font-size: 1gpx;
 }
