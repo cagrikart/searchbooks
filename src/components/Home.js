@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import Card from "./Card";
 import axios from "axios";
+import { red } from "@mui/material/colors";
 const Home = () => {
   const [search, setSearch] = useState("");
   const [bookDatas,setBookData] = useState([])
@@ -26,21 +27,18 @@ const Home = () => {
     <>
       <div className="header">
         <div className="row1">
-          <h1>
-            A room without books is like <br /> a body without a soul{" "}
-          </h1>
         </div>
         <div className="row2">
-          <h2>Find your book</h2>
+          <h1>Find Your Book</h1>
           <div className="search">
-            <input
+            <input 
+            style={{backgroundColor:"#D2B48C",color:"#757575",fontSize:"25px"}}
               type="text"
               value={search}
               onChange={(event) => setSearch(event.target.value)}
               onKeyPress={searchBook}
               placeholder="Enter Your Book Name"
             />
-            <button></button>
           </div>
         </div>
         <div className="container">
