@@ -18,7 +18,7 @@ const Card = ({ books }) => {
             <>
               <div
                 className="card"
-                style={{backgroundColor:"#D2B48C  "}}
+                style={{ backgroundColor: "#D2B48C  " }}
                 onClick={() => {
                   setShow(true);
                   setBookItem(item);
@@ -37,6 +37,8 @@ const Card = ({ books }) => {
               />
             </>
           );
+        } else {
+          return null;
         }
       })}
     </>

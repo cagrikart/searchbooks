@@ -4,7 +4,7 @@ const Modal = ({ show, items, onClose }) => {
   if (!show) {
     return null;
   }
-  let thumbnail =
+  const thumbnail =
     items.volumeInfo.imageLinks && items.volumeInfo.imageLinks.smallThumbnail;
   //let amount = items.saleInfo.listPrice && items.saleInfo.listPrice.amount;
   return (
@@ -15,7 +15,7 @@ const Modal = ({ show, items, onClose }) => {
             <i className="fas fa-times"></i>
           </button>
           <div className="inner-box">
-            <img src={thumbnail} />
+            <img src={thumbnail} alt={thumbnail} />
             <div className="info">
               <h1>{items.volumeInfo.title}</h1>
               <h3> {items.volumeInfo.authors}</h3>
