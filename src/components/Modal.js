@@ -1,12 +1,12 @@
 import React from "react";
 
-const Modal = ({ show, items,onClose}) => {
+const Modal = ({ show, items, onClose }) => {
   if (!show) {
     return null;
   }
   let thumbnail =
     items.volumeInfo.imageLinks && items.volumeInfo.imageLinks.smallThumbnail;
-  let amount = items.saleInfo.listPrice && items.saleInfo.listPrice.amount;
+  //let amount = items.saleInfo.listPrice && items.saleInfo.listPrice.amount;
   return (
     <>
       <div className="overlay">
@@ -19,8 +19,8 @@ const Modal = ({ show, items,onClose}) => {
             <div className="info">
               <h1>{items.volumeInfo.title}</h1>
               <h3> {items.volumeInfo.authors}</h3>
-              <h4 >
-                {items.volumeInfo.publisher} <br /> 
+              <h4>
+                {items.volumeInfo.publisher} <br />
                 <span>{items.volumeInfo.publishedDate}</span>
               </h4>
               <a href={items.volumeInfo.previewLink}>

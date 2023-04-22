@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./style.css";
 import Card from "./Card";
 import axios from "axios";
-import { red } from "@mui/material/colors";
 const Home = () => {
   const [search, setSearch] = useState("");
   const [bookDatas,setBookData] = useState([])
